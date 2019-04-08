@@ -1,0 +1,59 @@
+<html>
+
+   <head>
+    
+    
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            body{ width:100%; height:100%; overflow:hidden;}
+            .mole{ background-color:rgb(255,242,0);
+                   border-radius:20px 20px 0px 0px;
+                   height: 100%;
+                   width: 10%;
+                position: absolute;
+                top: 100%;
+                background-image: url(happy.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+              
+                 }
+          #object1{ left:10%;}
+          #object2{ left:45%;}
+          #object3{ left:80%;}
+       
+       </style>
+        <script >
+                 jQuery(document).ready(function(){
+                     
+                     jQuery('.mole').animate({'top':'0%'},700);
+                     
+                     jQuery('.mole').hover(function(){
+                          jQuery(this).css('background-image', 'url(sad.png)');
+                         jQuery(this).stop().animate({'top':'100%'},300,function(){
+                              jQuery(this).css('background-image', 'url(happy.png)');
+                             jQuery(this).animate({'top':'0%'},700);
+                         });
+                     });
+                 });
+       
+        </script>
+
+   </head>
+
+    <body>
+    
+     <div class="mole" id="object1"> </div>
+    
+     <div class="mole" id="object2"> </div>
+
+     <div class="mole" id="object3"> </div>
+
+
+    
+    
+    </body>
+
+
+
+</html>
+
