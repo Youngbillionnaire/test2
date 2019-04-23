@@ -69,6 +69,15 @@ body {
   height: 50px;
   margin: 25px 0px 10px -100px;
 }
+    .jumbotron{
+        margin-left: -10%;
+        background: url('../images/jumbo_1.jpg') no-repeat;
+        background-position: center;
+        height: 720px;
+        width: 120%;
+        box-shadow: 0 0 50px #3F0C1F;
+       
+    }
 
 
 }
@@ -99,9 +108,19 @@ body {
   margin-bottom: 0;
   line-height: .75;
   }
+    .jumbotron{
+        margin-left: -0.8%;
+        background: url('../images/jumbo_1.jpg') no-repeat;
+        background-position: center;
+        height: 720px;
+        width: 100%;
+        box-shadow: 0 0 50px #3F0C1F;
+       
+    }
 
   /* End Header */
 }
+
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -121,6 +140,16 @@ body {
     padding-top: 5px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
   }
+    .jumbotron{
+        margin-left: -0.4%;
+        background: url('../images/jumbo_1.jpg') no-repeat;
+        background-position: center;
+        height: 720px;
+        width: 100%;
+        box-shadow: 0 0 50px #3F0C1F;
+       
+    }
+
 
 }
 
@@ -140,7 +169,7 @@ body {
   }
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 5px;
-    font-size: 2em; /* 1vw = 1% of viewport width */
+    font-size: 2em; 
   }
  
 
@@ -151,6 +180,8 @@ body {
     font-size: 1em;
     margin-right: 5px;
   }
+    
+
 
   /* End Header */
 
